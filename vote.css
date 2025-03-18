@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    background-image: url('bg2.png');
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 170px;
+}
+
+/* NAVBAR CSS */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 35px;
+    color: #e105e4;
+    margin-left: 10px;
+}
+
+nav {
+    margin-top: -140px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    height: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    position: fixed;
+    width: 97%;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: #e105e4;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px #e105e4;
+    font-size: 20px;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+.nav-links li a:hover {
+    color: white;
+    text-shadow: 1px 1px 5px white;
+    transition: 0.4s;
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+/* Voting Page */
+.vote-title {
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 0px #e105e4;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Center and Indent Radio Buttons */
+.category {
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.category h2 {
+    color: white;
+    font-size: 24px;
+    text-shadow: 1px 1px 0px #e105e4;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.nominees {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.nominees label {
+    display: flex;
+    align-items: center;
+    color: #e105e4;
+    font-size: 18px;
+    text-shadow: 1px 1px 5px #e105e4;
+}
+
+.nominees input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #e105e4;
+    transform: scale(1.2);
+}
+
+.nominees span {
+    color: #e105e4;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: none;
+}
+
+.submit-btn {
+    padding: 10px 40px;
+    background: linear-gradient(to right, #e105e4, #6a169b);
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    border: none;
+    margin-top: 20px;
+    display: block;
+    margin: 20px auto;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(to right, #6a169b, #e105e4);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section.about h1,
+.footer-section.links h1 {
+    color: #e105e4;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.footer-section.about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links ul a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    line-height: 2;
+    transition: color 0.3s ease;
+}
+
+.footer-section.links ul a:hover {
+    color: #e105e4;
+}
+
+.footer-section.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section.contact img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-section.contact img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+
+    /* NAVBAR CSS FOR MOBILE */
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        margin-top: -70px;
+        margin-left: 0;
+        height: 70px;
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li a {
+        font-size: 25px;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .category {
+        margin: 20px 10px;
+        padding: 10px;
+    }
+
+    .category h2 {
+        font-size: 20px;
+    }
+
+    .nominees {
+        width: 100%;
+    }
+
+    .nominees label {
+        display: block; /* Change to block for better text wrapping */
+        font-size: 16px;
+        margin-bottom: 10px; /* Add spacing between labels */
+    }
+
+    .nominees input[type="radio"] {
+        margin-right: 10px;
+        transform: scale(1.2);
+    }
+
+    .nominees span {
+        display: inline; /* Ensure span text wraps properly */
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+
+    .submit-btn {
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}

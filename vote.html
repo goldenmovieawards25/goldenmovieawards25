@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vote - Golden Movie Awards 2025</title>
+    <link rel="stylesheet" type="text/css" href="vote.css">
+    <link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <p class="hamburger" onclick="toggleMenu()">☰</p>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="nominees.html">Nominees</a></li>
+            <li><a href="vote.html">Vote</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="logo.png" class="logo">
+    </nav>
+
+    <!-- Voting Section -->
+    
+        <h1 class="vote-title">Welcome to voting page- lets Begin your Votings</h1>
+        <form id="voteForm">
+            <!-- Category 1: Best Cinematographer -->
+            <div class="category">
+                <h2>1. Best Cinematographer</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="cinematographer" value="Nirav Shah"> Nirav Shah (<span>Ayalaan</span>)</label>
+                    <label><input type="radio" name="cinematographer" value="Kishor Kumar"> Kishor Kumar (<span>Thangalaan</span>)</label>
+                    <label><input type="radio" name="cinematographer" value="Gravemic U. Ary"> Gravemic U. Ary (<span>Teenz</span>)</label>
+                    <label><input type="radio" name="cinematographer" value="Dinesh Purushothaman"> Dinesh Purushothaman (<span>Maharaja</span>)</label>
+                    <label><input type="radio" name="cinematographer" value="Sidhartha Nuni"> Sidhartha Nuni (<span>The G.O.A.T</span>)</label>
+                    <label><input type="radio" name="cinematographer" value="R. Velraj"> R. Velraj (<span>Viduthalai P2</span>)</label>
+                    <label><input type="radio" name="cinematographer" value="Vetrivel Palanisamy"> Vetrivel Palanisamy (<span>Kanguva</span>)</label>
+                    <label><input type="radio" name="cinematographer" value="Mahendiran Jayaraju"> Mahendiran Jayaraju (<span>Meiyazhagan</span>)</label>
+                </div>
+            </div>
+
+            <!-- Category 2: Best VFX -->
+            <div class="category">
+                <h2>2. Best VFX</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="vfx" value="Phantom FX"> Phantom FX (<span>Ayalaan</span>)</label>
+                    <label><input type="radio" name="vfx" value="Hybrid 360 Studio"> Hybrid 360 Studio (<span>Thangalaan</span>)</label>
+                    <label><input type="radio" name="vfx" value="Symbiosis Technologies"> Symbiosis Technologies (<span>Double Tucker</span>)</label>
+                    <label><input type="radio" name="vfx" value="Knack Studios"> Knack Studios (<span>Aranmanai</span>)</label>
+                    <label><input type="radio" name="vfx" value="Red Chillies VFX, Lola VFX"> Red Chillies VFX, Lola VFX (<span>Indian 2</span>)</label>
+                    <label><input type="radio" name="vfx" value="Pixel Light Studio"> Pixel Light Studio (<span>Demonte Colony</span>)</label>
+                    <label><input type="radio" name="vfx" value="Lola Visual Effects, Suthan VFX"> Lola Visual Effects, Suthan VFX (<span>The G.O.A.T</span>)</label>
+                    <label><input type="radio" name="vfx" value="Lorven Studios, Hollywood Collaborations"> Lorven Studios, Hollywood Collaborations (<span>Kanguva</span>)</label>
+                </div>
+            </div>
+
+            <!-- Category 3: Best Actor in a Supporting Role (Female) -->
+            <div class="category">
+                <h2>3. Best Actor in a Supporting Role (Female)</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="supporting_female" value="Anika Surendaran"> Anika Surendaran (<span>PT Sir</span>)</label>
+                    <label><input type="radio" name="supporting_female" value="Nikila Vimal"> Nikila Vimal (<span>Vaazhai</span>)</label>
+                    <label><input type="radio" name="supporting_female" value="Divya Duraisamy"> Divya Duraisamy (<span>Vaazhai</span>)</label>
+                    <label><input type="radio" name="supporting_female" value="Abirami"> Abirami (<span>Vettaiyan</span>)</label>
+                    <label><input type="radio" name="supporting_female" value="Urvashi"> Urvashi (<span>J Baby</span>)</label>
+                    <label><input type="radio" name="supporting_female" value="Laila"> Laila (<span>The G.O.A.T</span>)</label>
+                    <label><input type="radio" name="supporting_female" value="Swasika"> Swasika (<span>Lubber Bandhu</span>)</label>
+                    <label><input type="radio" name="supporting_female" value="Manyu Warrior"> Manyu Warrior (<span>Viduthalai P2</span>)</label>
+                </div>
+            </div>
+
+            <!-- Category 4: Best Actor in a Supporting Role (Male) -->
+            <div class="category">
+                <h2>4. Best Actor in a Supporting Role (Male)</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="supporting_male" value="Kalaiyarasan"> Kalaiyarasan (<span>Vaazhai</span>)</label>
+                    <label><input type="radio" name="supporting_male" value="Prasanth"> Prasanth (<span>The Greatest of All Time</span>)</label>
+                    <label><input type="radio" name="supporting_male" value="Prabhudeva"> Prabhudeva (<span>The G.O.A.T</span>)</label>
+                    <label><input type="radio" name="supporting_male" value="Rahul Bose"> Rahul Bose (<span>Amaran</span>)</label>
+                    <label><input type="radio" name="supporting_male" value="Fahadh Faasil"> Fahadh Faasil (<span>Vettaiyan</span>)</label>
+                    <label><input type="radio" name="supporting_male" value="Amitabh Bacchan"> Amitabh Bacchan (<span>Vettaiyan</span>)</label>
+                    <label><input type="radio" name="supporting_male" value="Natty Subramaniam"> Natty Subramaniam (<span>Kanguva, Kadaisi Ulaga Por</span>)</label>
+                    <label><input type="radio" name="supporting_male" value="Pasupathy"> Pasupathy (<span>Thangalaan</span>)</label>
+                </div>
+            </div>
+
+            <!-- Category 5: Best Actor in a Comedy Role -->
+            <div class="category">
+                <h2>5. Best Actor in a Comedy Role</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="comedy_actor" value="Lollu Sabha Maaran"> Lollu Sabha Maaran (<span>Vadakupati Ramasamy</span>)</label>
+                    <label><input type="radio" name="comedy_actor" value="Lollu Sabha Sheesha"> (Late) Lollu Sabha Sheesha (<span>Vadakupati Ramasamy</span>)</label>
+                    <label><input type="radio" name="comedy_actor" value="Yogi Babu"> Yogi Babu (<span>Romeo, Rathnam, Aranmanai 4, The G.O.A.T, Vettaiyan</span>)</label>
+                    <label><input type="radio" name="comedy_actor" value="Tambi Ramaiya"> Tambi Ramaiya (<span>Inga Naanthan Kingu</span>)</label>
+                    <label><input type="radio" name="comedy_actor" value="Manobala"> (late)Manobala (<span>Aranmanai 4</span>)</label>
+                    <label><input type="radio" name="comedy_actor" value="VTV Ganesh"> VTV Ganesh (<span>Aranmanai 4</span>)</label>
+                    <label><input type="radio" name="comedy_actor" value="Kovai Sarala"> Kovai Sarala (<span>Aranmanai 4</span>)</label>
+                    <label><input type="radio" name="comedy_actor" value="Redin Kingsely"> Redin Kingsely (<span>Kanguva</span>)</label>
+                </div>
+            </div>
+
+            <!-- Category 6: Best Lyric Writer -->
+            <div class="category">
+                <h2>6. Best Lyric Writer</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="lyric_writer" value="Viveka"> Viveka (<span>Manipe Illamale (Kanguva)</span>)</label>
+                    <label><input type="radio" name="lyric_writer" value="Karthik Netha"> Karthik Netha (<span>Hey Minnale (Amaran)</span>)</label>
+                    <label><input type="radio" name="lyric_writer" value="Yugabharathi"> Yugabharathi (<span>Vennilavu Saaral (Amaran)</span>)</label>
+                    <label><input type="radio" name="lyric_writer" value="Umadevi"> Umadevi (<span>Yaaro Ivan Yaaro (Meiyazhagan)</span>)</label>
+                    <label><input type="radio" name="lyric_writer" value="Mohan Rajan"> Mohan Rajan (<span>Chillangirukkiye (Lubber Bandhu)</span>)</label>
+                    <label><input type="radio" name="lyric_writer" value="Uma Devi"> Uma Devi (<span>Miniki Miniki (Thangalaan)</span>)</label>
+                    <label><input type="radio" name="lyric_writer" value="Vairamuthu"> Vairamuthu (<span>Thaaye Thaaye (Maharaja)</span>)</label>
+                    <label><input type="radio" name="lyric_writer" value="Ko Sesha"> Ko Sesha (<span>Joe Joe (Aranmanai 4)</span>)</label>
+                </div>
+            </div>
+
+            <!-- Category 7: Best Playback Singer (Female) -->
+            <div class="category">
+                <h2>7. Best Playback Singer (Female)</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="playback_female" value="Shakthi Sree Gopalan"> Shakthi Sree Gopalan (<span>Thaen Sudare</span>)</label>
+                    <label><input type="radio" name="playback_female" value="Shweta Mohan"> Shweta Mohan (<span>Hey Minnale, Water Packet</span>)</label>
+                    <label><input type="radio" name="playback_female" value="Sivangi"> Sivangi (<span>Chillangirukkiye</span>)</label>
+                    <label><input type="radio" name="playback_female" value="Kharesma Ravichandran"> Kharesma Ravichandran (<span>Achacho</span>)</label>
+                    <label><input type="radio" name="playback_female" value="Srinisha Jayaseelan"> Srinisha Jayaseelan (<span>Achacho</span>)</label>
+                    <label><input type="radio" name="playback_female" value="Ganavya Doraiswamy"> Ganavya Doraiswamy (<span>Oh Raaya</span>)</label>
+                    <label><input type="radio" name="playback_female" value="Shreya Ghosal"> Shreya Ghosal (<span>Soodana, Naa Naa Hyranaa</span>)*</label>
+                    <label><input type="radio" name="playback_female" value="Deepthi Suresh"> Deepthi Suresh (<span>Manasilaayo</span>)</label>
+                </div>
+            </div>
+
+            <!-- Category 8: Best Playback Singer (Male) -->
+            <div class="category">
+                <h2>8. Best Playback Singer (Male)</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="playback_male" value="Anirudh Ravichandran"> Anirudh Ravichandran (<span>Manasilayo, Kadharalz</span>)</label>
+                    <label><input type="radio" name="playback_male" value="Santhosh Narayanan"> Santhosh Narayanan (<span>Water Packet</span>)</label>
+                    <label><input type="radio" name="playback_male" value="Pradeep Kumar"> Pradeep Kumar (<span>Chillanjirukkiye</span>)</label>
+                    <label><input type="radio" name="playback_male" value="Thalapathy Vijay"> Thalapathy Vijay (<span>Whistle Podu, Chinna Chinna Kangal</span>)</label>
+                    <label><input type="radio" name="playback_male" value="Paal Dabba"> Paal Dabba (<span>Makkamishi</span>)</label>
+                    <label><input type="radio" name="playback_male" value="A.R. Rahman"> A.R. Rahman (<span>Adangadha Asuran</span>)</label>
+                    <label><input type="radio" name="playback_male" value="Dhanush"> Dhanush (<span>Adangadha Asuran</span>)</label>
+                    <label><input type="radio" name="playback_male" value="Kamal Hassan"> Kamal Hassan (<span>Yaaro Ivan Yaaro</span>)</label>
+                </div>
+            </div>
+
+            <!-- Category 9: Best Music Director -->
+            <div class="category">
+                <h2>9. Best Music Director</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="music_director" value="A.R. Rahman"> A.R. Rahman (<span>Ayalaan, Lalsalaam, Raayan</span>)</label>
+                    <label><input type="radio" name="music_director" value="Hip Hop Aadhi"> Hip Hop Aadhi (<span>Aranmanai 4, PTSir, Kadaisi Ulaga Por</span>)</label>
+                    <label><input type="radio" name="music_director" value="G.V. Prakash Kumar"> G.V. Prakash Kumar (<span>Thangalaan, Amaran</span>)</label>
+                    <label><input type="radio" name="music_director" value="Yuvan Shankar Raja"> Yuvan Shankar Raja (<span>The G.O.A.T</span>)</label>
+                    <label><input type="radio" name="music_director" value="Ilayaraja"> Ilayaraja (<span>Viduthalai P2</span>)</label>
+                    <label><input type="radio" name="music_director" value="Anirudh Ravichandran"> Anirudh Ravichandran (<span>Vettaiyan, Indian 2</span>)</label>
+                    <label><input type="radio" name="music_director" value="Sean Roldan"> Sean Roldan (<span>Lubber Bandhu</span>)</label>
+                    <label><input type="radio" name="music_director" value="DSP"> DSP (<span>Kanguva</span>)</label>
+                </div>
+            </div>
+
+            <!-- Category 10: Best Film -->
+            <div class="category">
+                <h2>10. Best Film</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="best_film" value="Ayalaan"> Ayalaan</label>
+                    <label><input type="radio" name="best_film" value="Aranmanai 4"> Aranmanai 4</label>
+                    <label><input type="radio" name="best_film" value="Grarudan"> Grarudan</label>
+                    <label><input type="radio" name="best_film" value="Maharaja"> Maharaja</label>
+                    <label><input type="radio" name="best_film" value="Thangalaan"> Thangalaan</label>
+                    <label><input type="radio" name="best_film" value="Vaazhai"> Vaazhai</label>
+                    <label><input type="radio" name="best_film" value="The Greatest of All Time"> The Greatest of All Time</label>
+                    <label><input type="radio" name="best_film" value="Lubber Bandhu"> Lubber Bandhu</label>
+                    <label><input type="radio" name="best_film" value="Meiyazhagan"> Meiyazhagan</label>
+                    <label><input type="radio" name="best_film" value="Amaran"> Amaran</label>
+                    <label><input type="radio" name="best_film" value="Kanguva"> Kanguva</label>
+                </div>
+            </div>
+
+            <!-- Category 11: Best Director -->
+            <div class="category">
+                <h2>11. Best Director</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="best_director" value="R. Ravi Kumar"> R. Ravi Kumar (<span>Ayalaan</span>)</label>
+                    <label><input type="radio" name="best_director" value="Sundar C"> Sundar C (<span>Aranmanai 4</span>)</label>
+                    <label><input type="radio" name="best_director" value="R-S. Durai Senthilkumar"> R-S. Durai Senthilkumar (<span>Garudan</span>)</label>
+                    <label><input type="radio" name="best_director" value="Nithilan Saminathan"> Nithilan Saminathan (<span>Maharaja</span>)</label>
+                    <label><input type="radio" name="best_director" value="C. Prem Kumar"> C. Prem Kumar (<span>Meiyazhagan</span>)</label>
+                    <label><input type="radio" name="best_director" value="Pa. Ranjith"> Pa. Ranjith (<span>Thangalaan</span>)</label>
+                    <label><input type="radio" name="best_director" value="Mari Selvaraj"> Mari Selvaraj (<span>Vaazhai</span>)</label>
+                    <label><input type="radio" name="best_director" value="Vetri Maaran"> Vetri Maaran (<span>Viduthalai Part 2</span>)</label>
+                </div>
+            </div>
+
+            <!-- Category 12: Favorite Director -->
+            <div class="category">
+                <h2>12. Favorite Director</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="favorite_director" value="Rajkumar Roriyasamy"> Rajkumar Roriyasamy (<span>Amaran</span>)</label>
+                    <label><input type="radio" name="favorite_director" value="Thamizharrasan Pachamuthu"> Thamizharrasan Pachamuthu (<span>Lubber Bandhu</span>)</label>
+                    <label><input type="radio" name="favorite_director" value="Venkot Prabhu"> Venkot Prabhu (<span>The G.O.A.T</span>)</label>
+                    <label><input type="radio" name="favorite_director" value="Hip Hop Aadhi"> Hip Hop Aadhi (<span>Kadaisi Ulaga Por</span>)</label>
+                    <label><input type="radio" name="favorite_director" value="Shankar"> Shankar (<span>Indian 2</span>)</label>
+                    <label><input type="radio" name="favorite_director" value="T.J. Gayanavel"> T.J. Gayanavel (<span>Vettaiyan</span>)</label>
+                    <label><input type="radio" name="favorite_director" value="Parthibhan"> Parthibhan (<span>Teenz</span>)</label>
+                    <label><input type="radio" name="favorite_director" value="A.L. Vijay"> A.L. Vijay (<span>Mission Chapter 1</span>)</label>
+                </div>
+            </div>
+
+            <!-- Category 13: Entertainer of the Year -->
+            <div class="category">
+                <h2>13. Entertainer of the Year</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="entertainer" value="Siva Karthikeyan"> Siva Karthikeyan</label>
+                    <label><input type="radio" name="entertainer" value="Sai Pallavi"> Sai Pallavi</label>
+                    <label><input type="radio" name="entertainer" value="Thalapathy Vijay"> Thalapathy Vijay</label>
+                    <label><input type="radio" name="entertainer" value="Yogi Babu"> Yogi Babu</label>
+                    <label><input type="radio" name="entertainer" value="Santhanam"> Santhanam</label>
+                    <label><input type="radio" name="entertainer" value="Arjun Das"> Arjun Das</label>
+                    <label><input type="radio" name="entertainer" value="Preity Mukhudhan"> Preity Mukhudhan</label>
+                    <label><input type="radio" name="entertainer" value="Kashmira Paradesh"> Kashmira Paradesh</label>
+                </div>
+            </div>
+
+            <!-- Category 14: Best Actor in Negative Role -->
+            <div class="category">
+                <h2>14. Best Actor in Negative Role</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="negative_role" value="Unni Mukundan"> Unni Mukundan (<span>Garudan</span>)</label>
+                    <label><input type="radio" name="negative_role" value="Mohan"> Mohan (<span>The G.O.A.T</span>)</label>
+                    <label><input type="radio" name="negative_role" value="Anurag Kashyap"> Anurag Kashyap (<span>Maharaja</span>)</label>
+                    <label><input type="radio" name="negative_role" value="Singam Puli"> Singam Puli (<span>Maharaja</span>)</label>
+                    <label><input type="radio" name="negative_role" value="Malavika Mohan"> Malavika Mohan (<span>Thangalaan</span>)</label>
+                    <label><input type="radio" name="negative_role" value="Thalapathy Vijay"> Thalapathy Vijay (<span>The G.O.A.T</span>)</label>
+                    <label><input type="radio" name="negative_role" value="Bobby Deol"> Bobby Deol (<span>Kanguva</span>)</label>
+                    <label><input type="radio" name="negative_role" value="Bhuwan Arora"> Bhuwan Arora (<span>Amaran</span>)</label>
+                </div>
+            </div>
+
+            <!-- Category 15: Best Actor -->
+            <div class="category">
+                <h2>15. Best Actor</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="best_actor" value="Kavin"> Kavin (<span>Star</span>)</label>
+                    <label><input type="radio" name="best_actor" value="Aravind Swamy"> Aravind Swamy (<span>Meiyazhagan</span>)</label>
+                    <label><input type="radio" name="best_actor" value="Manikandan"> Manikandan (<span>Lover</span>)</label>
+                    <label><input type="radio" name="best_actor" value="Hip Hop Thamizha Aadi"> Hip Hop Thamizha Aadi (<span>PT Sir, Kadaisi Ulaga Por</span>)</label>
+                    <label><input type="radio" name="best_actor" value="Soori"> Soori (<span>Garudan, Vidudhalai P2, Kottukaali</span>)</label>
+                    <label><input type="radio" name="best_actor" value="Vijay Antony"> Vijay Antony (<span>Mazhai Pidikadha Manidan, Hitler, Romeo</span>)</label>
+                    <label><input type="radio" name="best_actor" value="Harish Kalyan"> Harish Kalyan (<span>Lubber Bandhu</span>)</label>
+                    <label><input type="radio" name="best_actor" value="Attakathi Dinesh"> Attakathi Dinesh (<span>Lubber Bandhu</span>)</label>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>16. Best Actress</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="best_actress" value="Amy Jackson"> Amy Jackson (<span>Mission Chapter 1</span>)</label>
+                    <label><input type="radio" name="best_actress" value="Sanjana KrishnaMoorthy"> Sanjana KrishnaMoorthy (<span>Lubber Bandhu</span>)</label>
+                    <label><input type="radio" name="best_actress" value="Mamitha Baiju"> Mamitha Baiju (<span>Rebel</span>)</label>
+                    <label><input type="radio" name="best_actress" value="Sri Gouri Priya"> Sri Gouri Priya (<span>Lover</span>)</label>
+                    <label><input type="radio" name="best_actress" value="Meenakshi Chaudary"> Meenakshi Chaudary (<span>The G.O.A.T</span>)</label>
+                    <label><input type="radio" name="best_actress" value="Dushara Vijayan"> Dushara Vijayan (<span>Raayan, Vettaiyan</span>)</label>
+                    <label><input type="radio" name="best_actress" value="Sri Divya"> Sri Divya (<span>Meiyazhagan</span>)</label>
+                    <label><input type="radio" name="best_actress" value="Keerthi Suresh"> Keerthi Suresh (<span>Raghu Thatha</span>)</label>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>17. Favorite Actress</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="fav_actress" value="Amy Jackson"> Amy Jackson (<span>Mission Chapter 1</span>)</label>
+                    <label><input type="radio" name="fav_actress" value="Tamannaah Bhatia"> Tamannaah Bhatia (<span>Aranmanai 4</span>)</label>
+                    <label><input type="radio" name="fav_actress" value="Sai Pallavi"> Sai Pallavi (<span>Amaran</span>)</label>
+                    <label><input type="radio" name="fav_actress" value="Priya Bhavani Shankar"> Priya Bhavani Shankar (<span>Demonte Colony 2, Black, Rathnam</span>)</label>
+                    <label><input type="radio" name="fav_actress" value="Hansika Motwani"> Hansika Motwani (<span>Guardian</span>)</label>
+                    <label><input type="radio" name="fav_actress" value="Disha Patani"> Disha Patani (<span>Kanguva</span>)</label>
+                    <label><input type="radio" name="fav_actress" value="Sneha"> Sneha (<span>The G.O.A.T</span>)</label>
+                    <label><input type="radio" name="fav_actress" value="Rakul Preet Singh"> Rakul Preet Singh (<span>Indian 2</span>)</label>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>18. Favorite Actor</h2>
+                <div class="nominees">
+                    <label><input type="radio" name="fav_actor" value="Vijay Sethupathy"> Vijay Sethupathy (<span>Maharaja, Viduthalai P2</span>)</label>
+                    <label><input type="radio" name="fav_actor" value="Siva Karthikeyan"> Siva Karthikeyan (<span>Aayalaan, Amaran</span>)</label>
+                    <label><input type="radio" name="fav_actor" value="Suriya"> Suriya (<span>Kanguva</span>)</label>
+                    <label><input type="radio" name="fav_actor" value="Kamal Hassan"> Kamal Hassan (<span>Indian 2</span>)</label>
+                    <label><input type="radio" name="fav_actor" value="Vikram"> Vikram (<span>Thangalaan</span>)</label>
+                    <label><input type="radio" name="fav_actor" value="Thalapathy Vijay"> Thalapathy Vijay (<span>The G.O.A.T</span>)</label>
+                    <label><input type="radio" name="fav_actor" value="Karthi"> Karthi (<span>Meiyazhagan</span>)</label>
+                    <label><input type="radio" name="fav_actor" value="Rajinikanth"> Rajinikanth (<span>Vettaiyan</span>)</label>
+                </div>
+            </div>
+
+
+
+            <!-- Add more categories here following the same structure -->
+
+            <button type="submit" class="submit-btn">Submit Votes</button>
+        </form>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1>About</h1>
+                <p>Golden Movie Awards is an annual awards ceremony honoring outstanding achievements in the film industry.<br><br><br> goldenmovieawards25@gmail.com<br></p>
+            </div>
+            <div class="footer-section links">
+                <h1>Quick Links</h1>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="nominees.html"><li>Nominees</li></a>
+                    <a href="vote.html"><li>Vote</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <img src="instagram.png" class="footer-logo">
+                <img src="facebook.png" class="footer-logo">
+                <img src="twitter.png" class="footer-logo">
+                <img src="youtube.png" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle menu for mobile
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+
+            // Animate the menu links
+            const navItems = document.querySelectorAll('.nav-links li');
+            navItems.forEach((item, index) => {
+                if (item.style.animation) {
+                    item.style.animation = '';
+                } else {
+                    item.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                }
+            });
+        }
+
+        // CSS Animation for smooth menu appearance
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes navLinkFade {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        try {
+            const response = await fetch('http://localhost:5000/submit-form', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, email, message })
+            });
+
+            const result = await response.json();
+            alert(result.message); // Show success message
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('Failed to submit form. Please try again.');
+        }
+    });
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:cursive;
+    background-image: url('bg2.png');
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 170px;
+}
+
+/*NAVBAR-CSS*/
+.hamburger{
+    display: none;/*#240a3b*/
+}
+nav{
+    margin-top: -140px;
+    margin-left: 20px;
+    /*box-shadow: 1px 1px 5px #6a169b;*/
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(15px);
+    height: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    position: fixed;
+    width: 97%;
+    z-index: 1000;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    list-style: none;
+    align-items: center;
+}
+.nav-links li a{
+    color: #e105e4;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px #e105e4;
+    font-size: 20px;
+}/*background: linear-gradient(45deg , #e105e4, #6a169b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+.logo{
+    width: 90px;
+    height: auto;
+}
+
+.nav-links li a:hover{
+    color: white;
+    text-shadow: 1px 1px 5px white;
+    transition: 0.4s;
+   
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+
+/*LOGO-CONTAINER-CSS*/
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.descrip-logo{
+    width: 400px;
+    height: auto;
+}
+.descrip{
+    align-items: center;
+    width: 40%;
+}
+.subtitle{
+    margin-top: 20px;
+    color: #e105e4;
+    font-size: 20px;
+    text-shadow: 1px 1px 5px #e105e4;
+}
+span{
+    color: white;
+    text-shadow: 1px 1px 5px white;
+}
+/*splperfomances-CSS*/
+.spl-perfom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 50px;
+    row-gap: 30px;
+}
+.spl-perfom-title{
+    color: #e105e4;
+    font-size: 20px;
+    text-shadow: 1px 1px 5px #e105e4;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+.spl-perfom-img{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #e105e4;
+}
+/* Button CSS */
+.btn {
+    padding: 10px 40px;
+    background: linear-gradient(to right, #e105e4, #6a169b);
+    border-radius: 10px;
+    font-size: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Improved visibility */
+    cursor: pointer; /* Changed to pointer */
+    transition: 0.4s;
+    margin-top: 20px;
+    border: none;
+    display: inline-block; /* Ensure the button behaves as a block element */
+}
+
+.btn a {
+    text-decoration: none;
+    color: #ffffff; /* Changed to white for better contrast */
+    display: block; /* Ensure the link fills the button */
+    width: 100%;
+    height: 100%;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #6a169b, #e105e4);
+    transform: scale(1.05); /* Slightly enlarge the button */
+    transition: 0.6s;
+    transition: color 0.5s ease;
+}
+
+/*footer-CSS*/
+/* FOOTER CSS */
+footer {
+    backdrop-filter: blur(15px);
+    color: white;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section.about h1,
+.footer-section.links h1 {
+    color: #e105e4;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer-section.about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links ul a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    line-height: 2;
+    transition: color 0.3s ease;
+}
+
+.footer-section.links ul a:hover {
+    color: #e105e4;
+}
+
+.footer-section.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section.contact img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-section.contact img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        min-width: 100%;
+    }
+
+    .footer-section.contact {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-section.contact img {
+        margin: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: cursive;
+        background-image: url('bg2.png');
+        background-attachment: fixed;
+        background-size: cover;
+        padding-top: 70px; /* Adjusted for mobile */
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+    }
+    
+    /* NAVBAR CSS FOR MOBILE */
+    .hamburger {
+        display: block; /* Show hamburger menu */
+        cursor: pointer;
+        font-size: 35px;
+        color: #e105e4;
+        margin-left: 10px;
+    }
+    
+    nav {
+        margin-top: -70px; /* Adjusted for mobile */
+        margin-left: 0; /* Reset margin */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        backdrop-filter: blur(15px);
+        height: 70px; /* Reduced height for mobile */
+        padding: 5px;
+        border-radius: 10px;
+        position: fixed;
+        width: 100%; /* Full width */
+        z-index: 1000;
+    }
+    
+    .nav-links {
+        display: none; /* Hidden by default */
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 70px; /* Below the navbar */
+        left: 0;
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        z-index: 1000;
+        list-style: none;
+    }
+    
+    .nav-links.active {
+        display: flex; /* Show when active */
+    }
+    
+    .nav-links li {
+        opacity: 0; /* For animation purposes */
+    }
+    
+    .nav-links li a {
+        color: #e105e4;
+        text-decoration: none;
+        text-shadow: 1px 1px 5px #e105e4;
+        font-size: 25px; /* Larger font for mobile */
+    }
+    
+    .logo {
+        width: 70px; /* Smaller logo for mobile */
+        height: auto;
+    }
+    
+    /* LOGO CONTAINER CSS FOR MOBILE */
+    .logo-container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        justify-content: center;
+        width: 100%; /* Full width */
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .descrip-logo {
+        width: 100%; /* Full width for mobile */
+        max-width: 300px; /* Limit maximum size */
+        height: auto;
+    }
+    
+    .descrip {
+        width: 100%; /* Full width for mobile */
+        text-align: center; /* Center text */
+    }
+    
+    .title {
+        color: #e105e4;
+        font-size: 40px; /* Smaller font for mobile */
+        text-shadow: 1px 1px 5px #e105e4;
+    }
+    
+    .subtitle {
+        margin-top: 10px; /* Reduced margin for mobile */
+        color: #e105e4;
+        font-size: 18px; /* Smaller font for mobile */
+        text-shadow: 1px 1px 5px #e105e4;
+    }
+    
+    span {
+        color: white;
+        text-shadow: 1px 1px 5px white;
+    }
+    
+    /* PERFORMANCES SECTION CSS FOR MOBILE */
+    .spl-perfom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; /* Reduced margin for mobile */
+        padding-bottom: 30px; /* Reduced padding for mobile */
+        row-gap: 20px; /* Reduced gap for mobile */
+    }
+    
+    .spl-perfom-title {
+        color: #e105e4;
+        font-size: 18px; /* Smaller font for mobile */
+        text-shadow: 1px 1px 5px #e105e4;
+        text-align: center;
+        backdrop-filter: blur(15px);
+        padding: 10px 20px; /* Reduced padding for mobile */
+        border-radius: 10px;
+        width: 100%; /* Full width */
+    }
+    
+    .spl-perfom-img {
+        width: 100%; /* Full width for mobile */
+        max-width: 300px; /* Limit maximum size */
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px #e105e4;
+    }
+    
+    /* BUTTON CSS FOR MOBILE */
+    .btn {
+        padding: 10px 20px; /* Reduced padding for mobile */
+        background: linear-gradient(to right, #e105e4, #6a169b);
+        border-radius: 10px;
+        font-size: 18px; /* Smaller font for mobile */
+        text-shadow: 1px 1px 5px #e105e4;
+        cursor: pointer; /* Changed to pointer for better UX */
+        transition: 0.4s;
+        margin-top: 10px; /* Reduced margin for mobile */
+        border: none;
+        width: 100%; /* Full width */
+        text-align: center;
+    }
+    
+    .btn a {
+        text-decoration: none;
+        color: #240a3b;
+    }
+
+}

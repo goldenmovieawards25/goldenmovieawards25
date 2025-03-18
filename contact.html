@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - GoldenMovieAwards'25</title>
+    <link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Contact Golden Movie Awards">
+</head>
+<body>
+    <nav>
+        <p class="hamburger" onclick="toggleMenu()">☰</p>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="nominees.html">Nominees</a></li>
+            <li><a href="vote.html">Vote</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="logo.png" class="logo">
+    </nav>
+
+    <center>
+        <div class="contact-container">
+            <h1 class="contact-title">Contact Us</h1>
+            <div class="contact-content">
+                <p class="contact-text">
+                    Have questions or need assistance? Reach out to us! We're here to help.
+                </p>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </center>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1>About</h1>
+                <p>Golden Movie Awards is an annual awards ceremony honoring outstanding achievements in the film industry. The awards are presented by KVVSH group of companies to recognize excellence of professionals in the film industry.</p>
+            </div>
+            <div class="footer-section links">
+                <h1>Quick Links</h1>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="nominees.html"><li>Nominees</li></a>
+                    <a href="vote.html"><li>Vote</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <img src="instagram.png" class="footer-logo">
+                <img src="facebook.png" class="footer-logo">
+                <img src="twitter.png" class="footer-logo">
+                <img src="youtube.png" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+
+            // Animate the menu links
+            const navItems = document.querySelectorAll('.nav-links li');
+            navItems.forEach((item, index) => {
+                if (item.style.animation) {
+                    item.style.animation = '';
+                } else {
+                    item.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                }
+            });
+        }
+
+        // CSS Animation for smooth menu appearance
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes navLinkFade {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+
+        
+    </script>
+</body>
+</html>

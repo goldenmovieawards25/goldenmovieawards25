@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us - GoldenMovieAwards'25</title>
+    <link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="About Golden Movie Awards">
+</head>
+<body>
+    <nav>
+        <p class="hamburger" onclick="toggleMenu()">☰</p>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="nominees.html">Nominees</a></li>
+            <li><a href="vote.html">Vote</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="logo.png" class="logo">
+    </nav>
+
+    <center>
+        <div class="about-container">
+            <h1 class="about-title">About Golden Movie Awards</h1>
+            <div class="about-content">
+                <p class="about-text">
+                    The Golden Movie Awards is an annual event that celebrates excellence in the film industry. Established in 2016, the awards recognize outstanding achievements in acting, directing, cinematography, and more. Our mission is to honor the hard work and creativity of filmmakers and artists who bring stories to life on the big screen.
+                </p>
+
+                <!-- Structured Information -->
+                <div class="info-section">
+                    <h2 class="info-title">Venue</h2>
+                    <p class="info-text">
+                        The 9th edition of the Golden Movie Awards will be held at the iconic <span>Sree Kanteera Stadium</span>, located in the heart of Karnataka. Known for its state-of-the-art facilities and grandeur, the stadium is the perfect venue to host this prestigious event.
+                    </p>
+                </div>
+
+                <div class="info-section">
+                    <h2 class="info-title">Date</h2>
+                    <p class="info-text">
+                        Mark your calendars! The event will take place on <span>March 31, 2025</span>. Join us for an unforgettable evening of glitz, glamour, and celebration.
+                    </p>
+                </div>
+
+                <div class="info-section">
+                    <h2 class="info-title">Voting Opens</h2>
+                    <p class="info-text">
+                        Voting for your favorite nominees starts on <span>March 17, 2025</span>. Don't miss the chance to support the stars you love! <a href="vote.html" class="info-link">Click here to vote</a>.
+                    </p>
+                </div>
+
+                <div class="info-section">
+                    <h2 class="info-title">Tickets Open</h2>
+                    <p class="info-text">
+                        Tickets for the event will be available starting <span>March 19, 2025</span>. Secure your spot at the most anticipated event of the year! <a href="#" class="info-link">Book your tickets now</a>.
+                    </p>
+                </div>
+
+                <div class="info-section">
+                    <h2 class="info-title">Hosts</h2>
+                    <p class="info-text">
+                        This year's event will be hosted by the dynamic duo of <span>Mirchi Siva</span> and <span>Bavana</span>. Get ready for an evening filled with laughter, entertainment, and unforgettable moments.
+                    </p>
+                </div>
+
+                <div class="info-section">
+                    <h2 class="info-title">Timings</h2>
+                    <p class="info-text">
+                        The event will begin at <span>5:00 PM</span> and is expected to run until <span>12:00 PM</span>. Make sure to arrive early to enjoy the red carpet festivities!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1>About</h1>
+                <p>Golden Movie Awards is an annual awards ceremony honoring outstanding achievements in the film industry. The awards are presented by KVVSH group of companies to recognize excellence of professionals in the film industry.</p>
+            </div>
+            <div class="footer-section links">
+                <h1>Quick Links</h1>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="nominees.html"><li>Nominees</li></a>
+                    <a href="vote.html"><li>Vote</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <img src="instagram.png" class="footer-logo">
+                <img src="facebook.png" class="footer-logo">
+                <img src="twitter.png" class="footer-logo">
+                <img src="youtube.png" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+    
+            // Animate the menu links
+            const navItems = document.querySelectorAll('.nav-links li');
+            navItems.forEach((item, index) => {
+                if (item.style.animation) {
+                    item.style.animation = '';
+                } else {
+                    item.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                }
+            });
+        }
+    
+        // CSS Animation for smooth menu appearance
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes navLinkFade {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+    
+</body>
+</html>
