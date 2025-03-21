@@ -260,7 +260,7 @@ footer {
         background-size: cover;
         padding-top: 70px; /* Adjusted for mobile */
         width: 100%;
-        height: 100vh; /* Full viewport height */
+        height: 100vh; /* Full viewport height */ /* Reduced brightness for better readability */
     }
     
     /* NAVBAR CSS FOR MOBILE */
@@ -268,8 +268,9 @@ footer {
         display: block; /* Show hamburger menu */
         cursor: pointer;
         font-size: 35px;
-        color: #e105e4;
+        color: white;
         margin-left: 10px;
+        text-shadow: 1px 2px 0px #e105e4;
     }
     
     nav {
@@ -311,9 +312,9 @@ footer {
     }
     
     .nav-links li a {
-        color: #e105e4;
+        color: white;
         text-decoration: none;
-        text-shadow: 1px 1px 5px #e105e4;
+        text-shadow: 1px 2px 0px #e105e4;
         font-size: 25px; /* Larger font for mobile */
     }
     
@@ -346,16 +347,16 @@ footer {
     }
     
     .title {
-        color: #e105e4;
+        color: white;
         font-size: 40px; /* Smaller font for mobile */
-        text-shadow: 1px 1px 5px #e105e4;
+        text-shadow: 1px 2px 0px #e105e4;
     }
     
     .subtitle {
         margin-top: 10px; /* Reduced margin for mobile */
-        color: #e105e4;
+        color: white;
         font-size: 18px; /* Smaller font for mobile */
-        text-shadow: 1px 1px 5px #e105e4;
+        text-shadow: 1px 2px 0px #e105e4;
     }
     
     span {
@@ -375,9 +376,9 @@ footer {
     }
     
     .spl-perfom-title {
-        color: #e105e4;
+        color: white;
         font-size: 18px; /* Smaller font for mobile */
-        text-shadow: 1px 1px 5px #e105e4;
+        text-shadow: 1px 2px 0px #e105e4;
         text-align: center;
         backdrop-filter: blur(15px);
         padding: 10px 20px; /* Reduced padding for mobile */
@@ -390,7 +391,7 @@ footer {
         max-width: 300px; /* Limit maximum size */
         height: auto;
         border-radius: 10px;
-        box-shadow: 1px 1px 5px #e105e4;
+        text-shadow: 1px 2px 0px #e105e4;
     }
     
     /* BUTTON CSS FOR MOBILE */
@@ -399,7 +400,7 @@ footer {
         background: linear-gradient(to right, #e105e4, #6a169b);
         border-radius: 10px;
         font-size: 18px; /* Smaller font for mobile */
-        text-shadow: 1px 1px 5px #e105e4;
+        text-shadow: 1px 2px 0px #e105e4;
         cursor: pointer; /* Changed to pointer for better UX */
         transition: 0.4s;
         margin-top: 10px; /* Reduced margin for mobile */

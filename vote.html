@@ -14,9 +14,8 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="nominees.html">Nominees</a></li>
+            <li><a href="winners.html"> Winners</a></li>
             <li><a href="vote.html">Vote</a></li>
-            <li><a href="contact.html">Contact</a></li>
         </ul>
         <img src="logo.png" class="logo">
     </nav>
@@ -199,7 +198,7 @@
                 <div class="nominees">
                     <label><input type="radio" name="favorite_director" value="Rajkumar Roriyasamy"> Rajkumar Roriyasamy (<span>Amaran</span>)</label>
                     <label><input type="radio" name="favorite_director" value="Thamizharrasan Pachamuthu"> Thamizharrasan Pachamuthu (<span>Lubber Bandhu</span>)</label>
-                    <label><input type="radio" name="favorite_director" value="Venkot Prabhu"> Venkot Prabhu (<span>The G.O.A.T</span>)</label>
+                    <label><input type="radio" name="favorite_director" value="Venkat Prabhu"> Venkat Prabhu (<span>The G.O.A.T</span>)</label>
                     <label><input type="radio" name="favorite_director" value="Hip Hop Aadhi"> Hip Hop Aadhi (<span>Kadaisi Ulaga Por</span>)</label>
                     <label><input type="radio" name="favorite_director" value="Shankar"> Shankar (<span>Indian 2</span>)</label>
                     <label><input type="radio" name="favorite_director" value="T.J. Gayanavel"> T.J. Gayanavel (<span>Vettaiyan</span>)</label>
@@ -301,7 +300,6 @@
 
             <button type="submit" class="submit-btn">Submit Votes</button>
         </form>
-    
 
     <!-- Footer -->
     <footer>
@@ -315,9 +313,8 @@
                 <ul>
                     <a href="index.html"><li>Home</li></a>
                     <a href="about.html"><li>About</li></a>
-                    <a href="nominees.html"><li>Nominees</li></a>
+                    <a href="winners.html"><li>Winners</li></a>
                     <a href="vote.html"><li>Vote</li></a>
-                    <a href="contact.html"><li>Contact</li></a>
                 </ul>
             </div>
             <div class="footer-section contact">
@@ -330,8 +327,9 @@
     </footer>
 
     <script>
-        // Toggle menu for mobile
-        function toggleMenu() {
+
+ // Toggle menu for mobile
+    function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
 
@@ -362,30 +360,31 @@
         `;
         document.head.appendChild(style);
 
-        document.getElementById('contactForm').addEventListener('submit', async (e) => {
-        e.preventDefault();
+        document.getElementById('voteForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
 
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-
-        try {
-            const response = await fetch('http://localhost:5000/submit-form', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ name, email, message })
+            const formData = new FormData(e.target);
+            const voteData = {};
+            formData.forEach((value, key) => {
+                voteData[key] = value;
             });
 
-            const result = await response.json();
-            alert(result.message); // Show success message
-        } catch (error) {
-            console.error('Error submitting form:', error);
-            alert('Failed to submit form. Please try again.');
-        }
-    });
-        
+            try {
+                const response = await fetch('http://localhost:5000/api/vote', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(voteData)
+                });
+
+                const result = await response.json();
+                alert(result.message); // Show success message
+            } catch (error) {
+                console.error('Error submitting vote:', error);
+                alert('Failed to submit vote. Please try again.');
+            }
+        });
     </script>
 </body>
 </html>
