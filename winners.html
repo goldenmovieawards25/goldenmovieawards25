@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GoldenMovieAwards'25</title>
+    <link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="winner.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Golden Movie Awards ">
+</head>
+<body>
+    <nav>
+        <p class="hamburger" onclick="toggleMenu()">☰</p>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="winners.html"> Winners</a></li>
+            <li><a href="vote.html">Vote</a></li>
+        </ul>
+        <img src="logo.png" class="logo">
+    </nav>
+
+
+    <h1 style="color: #e105e4; background-color: black; width: 100%; text-align: center; margin-top: 30px;">COMING SOON!</h1>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1>About</h1>
+                <p>Golden Movie Awards is an annual awards ceremony honoring outstanding achievements in the film industry. The awards are presented by KVVSH group of companies to recognize excellence of professionals in the film industry.<br><br><br> goldenmovieawards25@gmail.com<br></p>
+            </div>
+            <div class="footer-section links">
+                <h1>Quick Links</h1>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="winners.html"><li>Winners</li></a>
+                    <a href="vote.html"><li>Vote</li></a>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <a href="https://www.instagram.com/golden_movie_awards_tamil_2025?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="instagram.png" class="footer-logo"></a>
+                <a href="https://x.com/goldenmovi79620?t=DDUhd8Tjvvqiaezta3_uaQ&s=09"><img src="twitter.png" class="footer-logo"></a>
+                <a href="https://youtube.com/@goldenmovieawards25?si=uJYb7SZj6n7QYX9O"><img src="youtube.png" class="footer-logo"></a>
+            </div>
+            </div>
+        </footer>
+        <script>
+            function toggleMenu() {
+                const navLinks = document.querySelector('.nav-links');
+                navLinks.classList.toggle('active');
+        
+                // Animate the menu links
+                const navItems = document.querySelectorAll('.nav-links li');
+                navItems.forEach((item, index) => {
+                    if (item.style.animation) {
+                        item.style.animation = '';
+                    } else {
+                        item.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                    }
+                });
+            }
+        
+            // CSS Animation for smooth menu appearance
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @keyframes navLinkFade {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-10px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        </script>
+        
+    
+</body>
+</html>
