@@ -11,19 +11,10 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB Connection
-const mongoURI = 'mongodb://localhost:27017/shakthi';
+const mongoURI = 'mongodb+srv://ksakthi9604:%23shakthi960@shakthi.payb5.mongodb.net/?retryWrites=true&w=majority&appName=shakthi';
 mongoose.connect(mongoURI)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log('MongoDB connection error:', err));
-
-// Define a schema and model for Contact
-const contactSchema = new mongoose.Schema({
-    name: String,
-    email: String,
-    message: String
-});
-
-const Contact = mongoose.model('Contact', contactSchema);
 
 // Define a schema and model for Votes
 const voteSchema = new mongoose.Schema({
@@ -49,63 +40,12 @@ const voteSchema = new mongoose.Schema({
 
 const Vote = mongoose.model('Vote', voteSchema);
 
-// Route to handle contact form submissions
-app.post('/api/contact', async (req, res) => {
-    const { name, email, message } = req.body;
-
-    try {
-        const newContact = new Contact({ name, email, message });
-        await newContact.save();
-        res.status(201).json({ message: 'Message saved successfully!' });
-    } catch (err) {
-        res.status(500).json({ message: 'Error saving message', error: err });
-    }
-});
-
 // Route to handle vote submissions
 app.post('/api/vote', async (req, res) => {
-    const {
-        cinematographer,
-        vfx,
-        supporting_female,
-        supporting_male,
-        comedy_actor,
-        lyric_writer,
-        playback_female,
-        playback_male,
-        music_director,
-        best_film,
-        best_director,
-        favorite_director,
-        entertainer,
-        negative_role,
-        best_actor,
-        best_actress,
-        fav_actress,
-        fav_actor
-    } = req.body;
+    const voteData = req.body;
 
     try {
-        const newVote = new Vote({
-            cinematographer,
-            vfx,
-            supporting_female,
-            supporting_male,
-            comedy_actor,
-            lyric_writer,
-            playback_female,
-            playback_male,
-            music_director,
-            best_film,
-            best_director,
-            favorite_director,
-            entertainer,
-            negative_role,
-            best_actor,
-            best_actress,
-            fav_actress,
-            fav_actor
-        });
+        const newVote = new Vote(voteData);
         await newVote.save();
         res.status(201).json({ message: 'Vote saved successfully!' });
     } catch (err) {
