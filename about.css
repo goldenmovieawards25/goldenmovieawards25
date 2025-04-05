@@ -6,7 +6,6 @@
 }
 
 body {
-    font-family: cursive;
     background-image: url('bg2.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -240,7 +239,6 @@ footer {
     }
     
     body {
-        font-family: cursive;
         background-image: url('bg10.jpg');
         background-attachment: fixed;
         background-size: cover;
