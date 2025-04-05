@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    font-family: 'Courier New', Courier, monospace;
     background-image: url('bg2.jpg');
     background-attachment: fixed;
     background-size: cover;
