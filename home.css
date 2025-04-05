@@ -5,7 +5,7 @@
 }
 body{
     font-family:cursive;
-    background-image: url('bg2.png');
+    background-image: url('bg2.jpg');
     background-attachment: fixed;
     background-size: cover;
     padding-top: 170px;
@@ -37,11 +37,11 @@ nav{
     align-items: center;
 }
 .nav-links li a{
-    color: #e105e4;
+    color: #F5B316;
     text-decoration: none;
-    text-shadow: 1px 1px 5px #e105e4;
+    text-shadow: 1px 1px 5px #F5B316;
     font-size: 20px;
-}/*background: linear-gradient(45deg , #e105e4, #6a169b);
+}/*background: linear-gradient(45deg , #FFFFFF, #6a169b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
 .logo{
@@ -51,7 +51,7 @@ nav{
 
 .nav-links li a:hover{
     color: white;
-    text-shadow: 1px 1px 5px white;
+    text-shadow: 1px 1px 5px #F5B316;
     transition: 0.4s;
    
 }
@@ -90,13 +90,13 @@ nav{
 }
 .subtitle{
     margin-top: 20px;
-    color: #e105e4;
+    color: #FFFFFF;
     font-size: 20px;
-    text-shadow: 1px 1px 5px #e105e4;
+    text-shadow: 1px 1px 5px #FFFFFF;
 }
 span{
-    color: white;
-    text-shadow: 1px 1px 5px white;
+    color: #F5B316;
+    text-shadow: 1px 1px 5px #F5B316;
 }
 /*splperfomances-CSS*/
 .spl-perfom{
@@ -109,9 +109,9 @@ span{
     row-gap: 30px;
 }
 .spl-perfom-title{
-    color: #e105e4;
+    color: #FFFFFF;
     font-size: 20px;
-    text-shadow: 1px 1px 5px #e105e4;
+    text-shadow: 1px 1px 5px #FFFFFF;
     text-align: center;
     backdrop-filter: blur(15px);
     padding: 10px 40px;
@@ -121,12 +121,12 @@ span{
     width: 400px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 1px 1px 5px #e105e4;
+    box-shadow: 1px 1px 5px #F5B316;
 }
 /* Button CSS */
 .btn {
     padding: 10px 40px;
-    background: linear-gradient(to right, #e105e4, #6a169b);
+    background: linear-gradient(to right, #8800ff, #F5B316);
     border-radius: 10px;
     font-size: 20px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Improved visibility */
@@ -146,7 +146,7 @@ span{
 }
 
 .btn:hover {
-    background: linear-gradient(to right, #6a169b, #e105e4);
+    background: linear-gradient(to right, #F5B316, #8800ff);
     transform: scale(1.05); /* Slightly enlarge the button */
     transition: 0.6s;
     transition: color 0.5s ease;
@@ -178,7 +178,7 @@ footer {
 
 .footer-section.about h1,
 .footer-section.links h1 {
-    color: #e105e4;
+    color: #F5B316;
     font-size: 24px;
     margin-bottom: 15px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
@@ -188,6 +188,16 @@ footer {
     font-size: 16px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-section.about p a {
+    color: #F5B316;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-section.about p a:hover {
+    color: white;
+    text-shadow: 1px 1px 5px #F5B316;
 }
 
 .footer-section.links ul {
@@ -204,7 +214,8 @@ footer {
 }
 
 .footer-section.links ul a:hover {
-    color: #e105e4;
+    color: #F5B316;
+    text-shadow: 1px 1px 5px #F5B316;
 }
 
 .footer-section.contact {
@@ -255,7 +266,7 @@ footer {
     
     body {
         font-family: cursive;
-        background-image: url('bg2.png');
+        background-image: url('bg10.jpg');
         background-attachment: fixed;
         background-size: cover;
         padding-top: 70px; /* Adjusted for mobile */
@@ -270,7 +281,7 @@ footer {
         font-size: 35px;
         color: white;
         margin-left: 10px;
-        text-shadow: 1px 2px 0px #e105e4;
+        text-shadow: 1px 2px 3px #F5B316;
     }
     
     nav {
@@ -314,7 +325,7 @@ footer {
     .nav-links li a {
         color: white;
         text-decoration: none;
-        text-shadow: 1px 2px 0px #e105e4;
+        text-shadow: 1px 2px 3px #F5B316;
         font-size: 25px; /* Larger font for mobile */
     }
     
@@ -347,21 +358,21 @@ footer {
     }
     
     .title {
-        color: white;
+        color: #F5B316;
         font-size: 40px; /* Smaller font for mobile */
-        text-shadow: 1px 2px 0px #e105e4;
+        text-shadow: 1px 2px 2px #F5B316;
     }
     
     .subtitle {
         margin-top: 10px; /* Reduced margin for mobile */
         color: white;
         font-size: 18px; /* Smaller font for mobile */
-        text-shadow: 1px 2px 0px #e105e4;
+        text-shadow: 1px 2px 2px #F5B316;
     }
     
     span {
-        color: white;
-        text-shadow: 1px 1px 5px white;
+        color: #F5B316;
+        text-shadow: 1px 1px 5px #F5B316;
     }
     
     /* PERFORMANCES SECTION CSS FOR MOBILE */
@@ -378,7 +389,7 @@ footer {
     .spl-perfom-title {
         color: white;
         font-size: 18px; /* Smaller font for mobile */
-        text-shadow: 1px 2px 0px #e105e4;
+        text-shadow: 1px 2px 3px #F5B316;
         text-align: center;
         backdrop-filter: blur(15px);
         padding: 10px 20px; /* Reduced padding for mobile */
@@ -391,21 +402,21 @@ footer {
         max-width: 300px; /* Limit maximum size */
         height: auto;
         border-radius: 10px;
-        text-shadow: 1px 2px 0px #e105e4;
+        text-shadow: 1px 2px 3px #8800ff;
     }
     
     /* BUTTON CSS FOR MOBILE */
     .btn {
-        padding: 10px 20px; /* Reduced padding for mobile */
-        background: linear-gradient(to right, #e105e4, #6a169b);
+        padding: 10px 50px; /* Reduced padding for mobile */
+        background: linear-gradient(to right, #F5B316, #8800ff);
         border-radius: 10px;
         font-size: 18px; /* Smaller font for mobile */
-        text-shadow: 1px 2px 0px #e105e4;
+        color: white;
         cursor: pointer; /* Changed to pointer for better UX */
         transition: 0.4s;
         margin-top: 10px; /* Reduced margin for mobile */
         border: none;
-        width: 100%; /* Full width */
+        width: 200px; /* Full width */
         text-align: center;
     }
     

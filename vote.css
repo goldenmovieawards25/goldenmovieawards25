@@ -6,7 +6,7 @@
 
 body {
     font-family: cursive;
-    background-image: url('bg2.png');
+    background-image: url('bg2.jpg');
     background-attachment: fixed;
     background-size: cover;
     padding-top: 170px;
@@ -17,7 +17,7 @@ body {
     display: none;
     cursor: pointer;
     font-size: 35px;
-    color: #e105e4;
+    color: #F5B316;
     margin-left: 10px;
 }
 
@@ -45,9 +45,9 @@ nav {
 }
 
 .nav-links li a {
-    color: #e105e4;
+    color: #F5B316;
     text-decoration: none;
-    text-shadow: 1px 1px 5px #e105e4;
+    text-shadow: 1px 1px 5px #F5B316;
     font-size: 20px;
 }
 
@@ -79,7 +79,7 @@ nav {
 .vote-title {
     color: white;
     font-size: 20px;
-    text-shadow: 1px 1px 0px #e105e4;
+    text-shadow: 1px 1px 0px #F5B316;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -99,7 +99,7 @@ nav {
 .category h2 {
     color: white;
     font-size: 24px;
-    text-shadow: 1px 1px 0px #e105e4;
+    text-shadow: 1px 1px 0px #F5B316;
     margin-bottom: 10px;
     text-align: left;
 }
@@ -114,19 +114,19 @@ nav {
 .nominees label {
     display: flex;
     align-items: center;
-    color: #e105e4;
+    color: #F5B316;
     font-size: 18px;
-    text-shadow: 1px 1px 5px #e105e4;
+    text-shadow: 1px 1px 5px #F5B316;
 }
 
 .nominees input[type="radio"] {
     margin-right: 10px;
-    accent-color: #e105e4;
+    accent-color: #F5B316;
     transform: scale(1.2);
 }
 
 .nominees span {
-    color: #e105e4;
+    color: #F5B316;
     font-weight: bold;
     font-style: italic;
     text-shadow: none;
@@ -134,7 +134,7 @@ nav {
 
 .submit-btn {
     padding: 10px 40px;
-    background: linear-gradient(to right, #e105e4, #6a169b);
+    background: linear-gradient(to right, #F5B316, #8800ff);
     border-radius: 10px;
     font-size: 20px;
     color: white;
@@ -147,7 +147,7 @@ nav {
 }
 
 .submit-btn:hover {
-    background: linear-gradient(to right, #6a169b, #e105e4);
+    background: linear-gradient(to right, #8800ff, #F5B316);
     transform: scale(1.05);
 }
 
@@ -176,7 +176,7 @@ footer {
 
 .footer-section.about h1,
 .footer-section.links h1 {
-    color: #e105e4;
+    color: #F5B316;
     font-size: 24px;
     margin-bottom: 10px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
@@ -202,7 +202,7 @@ footer {
 }
 
 .footer-section.links ul a:hover {
-    color: #e105e4;
+    color: #F5B316;
 }
 
 .footer-section.contact {
@@ -222,6 +222,16 @@ footer {
     transform: scale(1.2);
 }
 
+.footer-section.about p a {
+    color: #F5B316;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-section.about p a:hover {
+    color: white;
+    text-shadow: 1px 1px 5px #F5B316;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     * {
@@ -232,12 +242,12 @@ footer {
     
     body {
         font-family: cursive;
-        background-image: url('bg2.png');
+        background-image: url('bg10.jpg');
         background-attachment: fixed;
         background-size: cover;
         padding-top: 70px; /* Adjusted for mobile */
         width: 100%;
-        height: 100vh; /* Full viewport height */
+        height: 100vh; /* Full viewport height */ /* Reduced brightness for better readability */
     }
     
     /* NAVBAR CSS FOR MOBILE */
@@ -247,7 +257,7 @@ footer {
         font-size: 35px;
         color: white;
         margin-left: 10px;
-        text-shadow: 1px 2px 0px #e105e4;
+        text-shadow: 1px 2px 3px #F5B316;
     }
     
     nav {
@@ -291,14 +301,15 @@ footer {
     .nav-links li a {
         color: white;
         text-decoration: none;
-        text-shadow: 1px 2px 0px #e105e4;
+        text-shadow: 1px 2px 3px #F5B316;
         font-size: 25px; /* Larger font for mobile */
     }
     
-
     .logo {
-        width: 70px;
+        width: 70px; /* Smaller logo for mobile */
+        height: auto;
     }
+    
 
     .category {
         margin: 20px 10px;
@@ -368,7 +379,7 @@ footer {
 .login-form button {
     width: 100%;
     padding: 10px;
-    background: #e105e4;
+    background: #F5B316;
     color: white;
     border: none;
     border-radius: 5px;
@@ -386,7 +397,7 @@ footer {
     margin-bottom: 20px;
 }
 .category-results h2 {
-    color: #e105e4;
+    color: #F5B316;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
 }
 .nominee-vote {

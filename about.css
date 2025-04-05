@@ -7,7 +7,7 @@
 
 body {
     font-family: cursive;
-    background-image: url('bg2.png');
+    background-image: url('bg2.jpg');
     background-attachment: fixed;
     background-size: cover;
     padding-top: 170px;
@@ -39,11 +39,11 @@ nav{
     align-items: center;
 }
 .nav-links li a{
-    color: #e105e4;
+    color: #F5B316;
     text-decoration: none;
-    text-shadow: 1px 1px 5px #e105e4;
+    text-shadow: 1px 1px 5px #F5B316;
     font-size: 20px;
-}/*background: linear-gradient(45deg , #e105e4, #6a169b);
+}/*background: linear-gradient(45deg , #F5B316, #6a169b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
 .logo{
@@ -88,9 +88,9 @@ nav{
 }
 
 .about-title {
-    color: #e105e4;
+    color: #F5B316;
     font-size: 40px;
-    text-shadow: 1px 1px 5px #e105e4;
+    text-shadow: 1px 1px 5px #F5B316;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -104,8 +104,8 @@ nav{
 }
 
 .about-text span {
-    color: #e105e4;
-    text-shadow: 1px 1px 5px #e105e4;
+    color: #F5B316;
+    text-shadow: 1px 1px 5px #F5B316;
 }
 
 /* INFO SECTION STYLES */
@@ -119,9 +119,9 @@ nav{
 }
 
 .info-title {
-    color: #e105e4;
+    color: #F5B316;
     font-size: 28px;
-    text-shadow: 1px 1px 5px #e105e4;
+    text-shadow: 1px 1px 5px #F5B316;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -134,13 +134,13 @@ nav{
 }
 
 .info-text span {
-    color: #e105e4;
-    text-shadow: 1px 1px 5px #e105e4;
+    color: #F5B316;
+    text-shadow: 1px 1px 5px #F5B316;
     font-weight: bold;
 }
 
 .info-link {
-    color: #e105e4;
+    color: #F5B316;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -175,7 +175,7 @@ footer {
 }
 
 .footer-section h1 {
-    color: #e105e4;
+    color: #F5B316;
     font-size: 24px;
     margin-bottom: 15px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
@@ -201,7 +201,7 @@ footer {
 }
 
 .footer-section.links ul a:hover {
-    color: #e105e4;
+    color: #F5B316;
 }
 
 .footer-section.contact {
@@ -221,6 +221,16 @@ footer {
     transform: scale(1.2);
 }
 
+.footer-section.about p a {
+    color: #F5B316;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-section.about p a:hover {
+    color: white;
+    text-shadow: 1px 1px 5px #F5B316;
+}
+
 /* RESPONSIVE DESIGN FOR MOBILE */
 @media screen and (max-width: 768px) {
     * {
@@ -231,12 +241,12 @@ footer {
     
     body {
         font-family: cursive;
-        background-image: url('bg2.png');
+        background-image: url('bg10.jpg');
         background-attachment: fixed;
         background-size: cover;
         padding-top: 70px; /* Adjusted for mobile */
         width: 100%;
-        height: 100vh; /* Full viewport height */
+        height: 100vh; /* Full viewport height */ /* Reduced brightness for better readability */
     }
     
     /* NAVBAR CSS FOR MOBILE */
@@ -246,7 +256,7 @@ footer {
         font-size: 35px;
         color: white;
         margin-left: 10px;
-        text-shadow: 1px 2px 0px #e105e4;
+        text-shadow: 1px 2px 3px #F5B316;
     }
     
     nav {
@@ -290,16 +300,15 @@ footer {
     .nav-links li a {
         color: white;
         text-decoration: none;
-        text-shadow: 1px 2px 0px #e105e4;
+        text-shadow: 1px 2px 3px #F5B316;
         font-size: 25px; /* Larger font for mobile */
     }
-    
     
     .logo {
         width: 70px; /* Smaller logo for mobile */
         height: auto;
     }
-
+    
     /* About Section Mobile */
     .about-container {
         width: 95%;
